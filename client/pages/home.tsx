@@ -8,7 +8,7 @@ import { GlobalContext } from './_app';
 
 async function foo(user: any) {
   const _user = JSON.parse(user);
-  const res = await fetch("http://localhost:8080/putFriend" + _user);
+  const res = await fetch("https://nodejsgamedashbe.herokuapp.com/putFriend" + _user);
   const friendsList: string[] | [] = await res.json();
   return friendsList;
 }

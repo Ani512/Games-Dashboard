@@ -45,7 +45,7 @@ const signup: NextPage = () => {
           password: data.get('password'),
         }
         // console.log(user);
-        const check = await axios.post('http://localhost:8080/signup', user);
+        const check = await axios.post('https://nodejsgamedashbe.herokuapp.com/signup', user);
         console.log(check);
 
         if (check && check.status === 201) {

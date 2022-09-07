@@ -42,10 +42,12 @@ const addFriendRoute = require('./routes/AddFriendRoute');
 app.use("/", addFriendRoute); 
 
 //port
-const port = 8080;  //process.ev.PORT = 8080
+const port = process.env.PORT || 8080;  //process.ev.PORT = 8080
 
 //listener
-app.listen(8080, () => { console.log("Server started on port 8080")});
+app.listen(process.env.PORT || 8080, () => { 
+    console.log("Server started on port 8080")
+});
 
 
 module.exports = app;

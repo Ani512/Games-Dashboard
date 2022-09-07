@@ -66,7 +66,7 @@ export default function AddFriend() {
             // cancelAnimationFrame
             setSuccess(true);
             handleClickSnack();
-            axios.post('http://localhost:8080/addFriend', id);
+            axios.post('https://nodejsgamedashbe.herokuapp.com/addFriend', id);
             setFriends([...friends, id.friendName]);
             setTimeout(() => {
                 snackbarClose();

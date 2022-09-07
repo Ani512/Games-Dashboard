@@ -20,7 +20,7 @@ function deleteFriend(friendid: any, friends: any[], setFriends: any, userName: 
     }
     const nid = id.userName + "+" + id.friend;
     // console.log(id);
-    axios.delete("http://localhost:8080/deleteFriend/" + nid);
+    axios.delete("https://nodejsgamedashbe.herokuapp.com/deleteFriend/" + nid);
 
     const index = friends.indexOf(friendid);
     if (index > -1) { // only splice array when item is found
