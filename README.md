@@ -3,9 +3,9 @@
 ### How To Use -
 1. Add Some friends you want to play a game with.
 2. Add some games that you own or would like to play.
-3. Select a Gnere between friends.
+3. Choose a Genre according to your mood.
 4. Select the Total Number of Players playing the game.
-5. Clicking on Find Gmaes will give you a list of games that you and your friend own that are present in the Genre and allows those many players.
+5. Clicking on Find Games will give you a list of games that you and your friend own that are present in the specified Genre and allows the selected number of players.
 
 ![image](https://user-images.githubusercontent.com/55306116/188905579-b11e4fd1-5a4a-49cb-b736-e38126352bda.png)
 
