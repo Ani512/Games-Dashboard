@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react';
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 
 type GlobalContextType = {
   userName: any;
@@ -20,6 +21,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <GlobalContext.Provider value={{ userName, setUserName }}>
+      <Head>
+        <title>Games Dashboard</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Component {...pageProps} />
     </GlobalContext.Provider>
   )
