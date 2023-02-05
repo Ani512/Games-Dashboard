@@ -66,7 +66,7 @@ export default function AddFriend() {
             // cancelAnimationFrame
             setSuccess(true);
             handleClickSnack();
-            axios.post('https://nodejsgamedashbe.herokuapp.com/addFriend', id);
+            axios.post('https://games-dashboard.onrender.com/addFriend', id);
             setFriends([...friends, id.friendName]);
             setTimeout(() => {
                 snackbarClose();

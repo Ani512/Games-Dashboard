@@ -189,7 +189,7 @@ function EnhancedTableHead(props: EnhancedTableProps) {
 }
 
 async function put(userName: string, setGames: any, router: any) {
-  await fetch("https://nodejsgamedashbe.herokuapp.com/putGame" + userName)
+  await fetch("https://games-dashboard.onrender.com/putGame" + userName)
   .then(res => res.json())
   .then((jsonRes) => {
     setGames(jsonRes);
@@ -205,7 +205,7 @@ function deleteGame (gameid: readonly string[], userName: string, games: [], set
   const _user = JSON.parse(userName);
   id.map(async (name) => {
     const nid = _user+"+"+name;
-    await axios.delete("https://nodejsgamedashbe.herokuapp.com/deleteGame/" + nid);
+    await axios.delete("https://games-dashboard.onrender.com/deleteGame/" + nid);
   })
   put(_user, setGames, router);
 }
