@@ -44,7 +44,7 @@ const Index: NextPage = () => {
       password: data.get('password'),
     }
 
-    const check = await axios.post('https://nodejsgamedashbe.herokuapp.com/login', user);
+    const check = await axios.post('https://games-dashboard.onrender.com/login', user);
     // console.log(check);
     
     if (check && check.status === 200) {

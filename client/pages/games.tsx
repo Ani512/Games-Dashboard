@@ -15,7 +15,7 @@ export const GamesContext = createContext<GamesContextType | any>({});
 
 async function foo(user :any) {
     const _user = JSON.parse(user);
-    const res = await fetch("https://nodejsgamedashbe.herokuapp.com/putGame" + _user);
+    const res = await fetch("https://games-dashboard.onrender.com/putGame" + _user);
     const gamesList = await res.json();
     return gamesList;
 }

@@ -77,7 +77,7 @@ export default function AddGameForm(props: any) {
             setSuccess(true);
             handleClickSnack();
             // console.log(id);
-            axios.post('https://nodejsgamedashbe.herokuapp.com/addGame', id);
+            axios.post('https://games-dashboard.onrender.com/addGame', id);
             setGames([...games, id.gameName]);
             setTimeout(() => {
                 props.setOpen(false);

@@ -145,7 +145,7 @@ export default function HomePage(props: any) {
             for (let i = 0; i < submitted.friend.length; i++) {
                 (i === submitted.friend.length-1) ? friends+=submitted.friend[i] : friends=friends+submitted.friend[i]+",";
             }
-            const findgames_url = `https://nodejsgamedashbe.herokuapp.com/findgames?friends=${encodeURIComponent(friends)}&players=${encodeURIComponent(submitted.players)}&genre=${encodeURIComponent(submitted.genre)}`;
+            const findgames_url = `https://games-dashboard.onrender.com/findgames?friends=${encodeURIComponent(friends)}&players=${encodeURIComponent(submitted.players)}&genre=${encodeURIComponent(submitted.genre)}`;
             
             // Fetch the Filtered JSON response from the database
             await fetch(findgames_url)
